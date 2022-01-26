@@ -1,0 +1,412 @@
+/* ESTILOS GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: #D3DEDC; */
+    background: rgb(145,196,131);
+    background: linear-gradient(0deg, rgb(196, 179, 131) 19%, rgb(202, 186, 150) 27%, rgba(154,208,236,1) 83%);
+}
+.header{
+    grid-area: header;
+    background-color: #92A9BD;
+    margin-bottom: 25px;
+}
+.navegacion{
+    padding: 5px;
+    /* margin-bottom: 15px; */
+}
+.navegacion ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.navegacion ul li a{
+    padding: 15px;
+    text-decoration: none;
+    color: #FFEFEF;
+    font-size: large;
+    font-family: 'Pacifico', cursive;
+}
+.navegacion ul li{
+    transition: 0.3s;
+}
+.navegacion ul li:hover{
+    transform: scale(1.2);
+}
+main{
+    grid-area: main;
+    width: 90%;
+    margin: auto;
+}
+main div{
+    margin: 10px;
+}
+footer{
+    grid-area: footer;
+    margin-top: 25px;
+    height: 100px;
+    background-color: #92A9BD;
+    text-align: center;
+}
+.flexCentro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/*****************
+        INDEX
+ ****************** */
+.banner{
+    grid-area: header;      /**/
+
+    background-image: url("../images/road.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    min-height: 50vh;
+}
+.encabezado{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 2em;
+    color: #FFEFEF;
+}
+.encabezado h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.imagen{
+    transition: 0.5s;
+    width: 100%;
+    border: 1px dashed #FFEFEF;
+}
+.efectoHover{
+    position: relative;
+}
+.efectoHover:hover .imagen{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+.efectoHover span{ 
+    transition: 0.4s ;
+    position: absolute;
+    z-index: 1;             /*Para que este delante de la imagen al aparecer*/
+    visibility: hidden;
+    margin: 20%;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 50px;
+    color: rgb(61, 61, 61);
+}
+.efectoHover:hover span{
+    visibility: visible;
+    transform: scale(1.5);
+
+}
+
+/* GRIDS INDEX */
+.contenedorIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header header"
+                         "main main"
+                         "footer footer"
+     ;
+}
+.mainIndex{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/******************
+ PAGINA DE CONTACTO 
+ ********************/
+.seccionContacto{
+    width: 100%;
+    border-radius: 2%;
+    border: 2px solid black;
+    /* background: rgb(244,223,186);
+    background: radial-gradient(circle, rgba(244,223,186,1) 0%, rgba(238,195,115,1) 100%); */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.mapa{
+    margin: 3%;
+    padding: 0;
+    width: 55%;
+}
+.ubicacion{
+    margin: 2%;
+    padding: 0;
+
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+fieldset{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+fieldset div{
+    /* background-color: red; */
+    width: 50%;
+    margin: 10px 0px;
+}
+fieldset input{
+    width: 70%;
+    border-radius: 5px;
+    padding: 5px;
+}
+fieldset .mensaje, .botones{width: 90%;}
+textarea{ 
+    resize: none; 
+    font-family:sans-serif;
+    border-radius: 5px;
+    padding: 10px
+}
+.botones{
+    justify-content: space-around;
+}
+.botones input{
+    width: 40%;
+}
+
+
+
+/******************
+ PAGINA DE VIAJES 
+ *******************/
+.tarjeta{
+    min-width: 395px;
+    /* width: 100%; */
+    height: 100%;
+    background-color: #92A9BD;
+    border-radius: 15px;
+}
+.tarjeta img{
+    /* width: 100%; */
+    height: 70%;
+    border-radius: 15px;
+}
+.tarjeta div{
+    display: flex;
+    justify-content: center;
+}
+.tarjeta input{
+    width: 90%;
+}
+.botonBuscar input{
+    width: 40%;
+}
+
+/* GRID VIAJES */
+.contenedorViajes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+                        "header header"
+                        "main main"
+                        "footer footer";
+}
+.contenedorViajes main h1{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 15px; 
+}
+.seccionViajes{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/**************
+    GALERIA
+**************/
+.seccionGaleria{
+    margin-bottom: 60px;
+    background-color: rgb(265,265,265,0.2);
+    border-radius: 15px;
+}
+.seccionGaleria .imagenes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.seccionGaleria img{
+    width: 30%;
+    height: 200px;
+    margin: 5px;
+    border-radius: 3%;
+    transition-duration: .5s;
+    filter: grayscale();
+    /* position: static; */
+}
+.seccionGaleria img:hover{
+    z-index: 1; /*para que pase por encima de las otras imagenes cuando se agranda*/
+    filter: none;
+    height: 50%;
+    position: static;
+    transform: scale(1.5);
+    transform-origin: top left;
+}
+.mainGaleria{
+    border-radius: 15px;
+    background: rgb(21,114,161);
+    background: linear-gradient(180deg, rgba(21,114,161,1) 23%, rgba(40,78,120,1) 94%);
+}
+
+
+
+
+
+
+
+/*******************
+    PAGINA NOSOTROS 
+ ********************/
+.opinion{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+}
+section h2{
+    margin: 20px ;
+    text-align: center;
+}
+
+/* GRID NOSOTROS */
+.contenedorNosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header"
+                         "empresa empresa empresa opiniones"
+                         "empleados empleados empleados opiniones"
+                         "convenios convenios convenios opiniones"
+                         "footer footer footer footer"
+     ;
+     grid-auto-flow: row;
+}
+.contenedorNosotros .sectionEmpresa{
+    grid-area: empresa;
+    padding: 10px;
+    /* background-color: #96CEB4; */
+    text-align:justify;
+}
+.contenedorNosotros .sectionEmpleados{
+    grid-area: empleados;
+    padding: 10px;
+    /* background-color: #9AD0EC; */
+}
+.contenedorNosotros .sectionConvenios{
+    grid-area: convenios;
+    padding: 10px;
+    /* background-color: #11468F; */
+}
+.contenedorNosotros .sectionOpiniones{
+    grid-area: opiniones;
+    padding: 10px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    margin: 5px;
+    /* background-color: #1572A1; */
+    /* background: rgb(40,78,120, 1); */
+    background: linear-gradient(180deg, rgba(40,78,120,0) 16%, rgba(21,114,161,1) 54%);
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .ubicacion{
+        width: 100%;
+        margin: 15%;
+    }
+    .mapa{
+        margin: 25px;
+        width: 100%;
+    }
+    .mainIndex{
+        grid-template-columns: 80%;
+    }
+    .encabezado h1{ /*INDEX*/
+        font-size: 2.5em;
+    }
+    .seccionViajes{
+        grid-template-columns: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .seccionGaleria img{
+        width: 45%;
+        /* height: 50%; */
+    }
+    .contenedorNosotros{
+        grid-template-areas: "header header header header"
+                         "empresa empresa empresa empresa"
+                         "empleados empleados empleados empleados"
+                         "convenios convenios convenios convenios"
+                         "opiniones opiniones opiniones opiniones"
+                         "footer footer footer footer"
+     ;
+    }
+    fieldset div{
+        width: 100%;
+    }
+    .mapa iframe{
+        height: 300px;
+    }
+    .efectoHover span{
+        visibility: visible;
+    }
+    .mainIndex{
+        grid-template-columns: 100%;
+    }
+    .seccionViajes{
+        grid-template-columns: 100%;
+    }
+}
