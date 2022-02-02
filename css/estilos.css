@@ -137,72 +137,21 @@ footer{
 /******************
  PAGINA DE CONTACTO 
  ********************/
-.seccionContacto{
-    width: 100%;
-    border-radius: 2%;
-    border: 2px solid black;
-    /* background: rgb(244,223,186);
-    background: radial-gradient(circle, rgba(244,223,186,1) 0%, rgba(238,195,115,1) 100%); */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    align-content: space-around;
-}
-.mapa{
-    margin: 3%;
-    padding: 0;
-    width: 55%;
-}
 .ubicacion{
-    margin: 2%;
-    padding: 0;
-
-    width: 35%;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
-fieldset{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-fieldset div{
-    /* background-color: red; */
-    width: 50%;
-    margin: 10px 0px;
-}
-fieldset input{
-    width: 70%;
-    border-radius: 5px;
-    padding: 5px;
-}
-fieldset .mensaje, .botones{width: 90%;}
-textarea{ 
-    resize: none; 
-    font-family:sans-serif;
-    border-radius: 5px;
-    padding: 10px
-}
-.botones{
-    justify-content: space-around;
-}
-.botones input{
-    width: 40%;
-}
-
 
 
 /******************
  PAGINA DE VIAJES 
  *******************/
 .tarjeta{
-    /* min-width: 395px; */
     /* width: 100%; */
     /* height: 100%; */
     background-color: #92A9BD;
@@ -214,50 +163,13 @@ textarea{
     height: 70%;
     border-radius: 15px;
 }
-/* .tarjeta div{
-    display: flex;
-    justify-content: center;
-} */
-/* .tarjeta input{
-    width: 90%;
-}*/
+
 .btnBuscar{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-    /* width: 40%; */
 } 
-.btnBuscar input{
-    width: 40%;
-}
-
-/* GRID VIAJES */
-.contenedorViajes{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-                        "header header"
-                        "main main"
-                        "footer footer";
-}
-.contenedorViajes main h1{
-    text-align: center;
-    font-family: 'Bebas Neue', cursive;
-    margin-bottom: 15px; 
-}
-.seccionViajes article{
-    /* margin: 15px; */
-    /* width: 100%; */
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* grid-template-rows: auto; */
-    /* gap: 20px 20px; */
-    /* align-items: center; */
-    /* justify-content: center; */
-}
-
 
 
 /**************
@@ -368,17 +280,6 @@ section h2{
 
 
 @media screen and (max-width: 768px) {
-    .ubicacion{
-        width: 100%;
-        margin: 15%;
-    }
-    .mapa{
-        margin: 25px;
-        width: 100%;
-    }
-    .mainIndex{
-        grid-template-columns: 80%;
-    }
     .encabezado h1{ /*INDEX*/
         font-size: 2.5em;
     }
@@ -386,11 +287,15 @@ section h2{
 
 @media screen and (max-width: 575px) {
     .navegacion{
-        background-color: rgb(0,0,0, 0.5);
+        background-color: rgb(146, 169, 189, 0.5);
     }
     .encabezado h1{ /*INDEX*/
         font-size: 2.2em;
     }
+    .efectoHover span{
+        visibility: visible;
+    }
+
     .seccionGaleria img{
         width: 45%;
         /* height: 50%; */
@@ -407,13 +312,5 @@ section h2{
     fieldset div{
         width: 100%;
     }
-    .mapa iframe{
-        height: 300px;
-    }
-    .efectoHover span{
-        visibility: visible;
-    }
-    .mainIndex{
-        grid-template-columns: 100%;
-    }
+
 }
