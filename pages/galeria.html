@@ -8,7 +8,14 @@
     <title>Galeria - Ida y vuelta</title>
 
     <link rel="shortcut icon" href="../images/icono/icono.png">
-    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
 
     <!-- Letra "Bebas Neue" y "Pacifico" de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,56 +23,137 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
     <header class="header">
-        <nav class="navegacion">
-            <ul>
-                <li> <a href="../index.html"> <img src="../images/icono/logo.png" width="75px" alt="logo"> </a> </li>
-                <li> <a href="viajes.html">Viajes</a> </li>
-                <li> <a href="nosotros.html">Nosotros</a> </li>
-                <li> <a href="contacto.html">Contacto</a> </li>
-            </ul>
+        <nav class="navbar navbar-expand-sm navegacion">
+            <div class="container-fluid">
+                <a href="../index.html"> <img src="../images/icono/logo.png" width="75px" alt="logo"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><img src="../images/imgnavbar.png" width="40px" alt=""></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li> <a href="viajes.html">Viajes</a> </li>
+                        <li> <a href="nosotros.html">Nosotros</a> </li>
+                        <li> <a href="contacto.html">Contacto</a> </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
     </header>
 
-    <main class="mainGaleria">
+    <main class="container">
 
-        <section class="seccionGaleria">
-            <h2>PINAMAR</h2>
-            <div class="imagenes">
-                <img src="../images/galeria/pinamar/pinamar-1.jpg" height="300px"  alt="Playa Pinamar">
-                <img src="../images/galeria/pinamar/pinamar-2.jpg" height="300px"  alt="Playa Pinamar">
-                <img src="../images/galeria/pinamar/pinamar-3.jpg" height="300px"  alt="Playa Pinamar">
-                <img src="../images/galeria/pinamar/pinamar-4.jpg" height="300px"  alt="Playa Pinamar">
-                <iframe width="500" height="300" src="https://www.youtube.com/embed/9DhzY0aPTp0"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <section class="row shadow-lg rounded">
+            <div class="row">
+                <div class="col">
+                    <h2>PINAMAR</h2>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="shadow" style="border: 2px solid gold;">
+                        <img src="../images/galeria/pinamar/pinamar-1.jpg" width="100%" alt="Playa Pinamar">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="shadow" style="border: 2px solid gold;">
+                        <img src="../images/galeria/pinamar/pinamar-2.jpg" width="100%" alt="Playa Pinamar">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="shadow" style="border: 2px solid gold;">
+                        <img src="../images/galeria/pinamar/pinamar-3.jpg" width="100%" alt="Playa Pinamar">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="shadow" style="border: 2px solid gold;">
+                        <img src="../images/galeria/pinamar/pinamar-4.jpg" width="100%" alt="Playa Pinamar">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="shadow" style="border: 2px solid gold;">
+                        <iframe width="100%" src="https://www.youtube.com/embed/9DhzY0aPTp0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </section>
+        <hr>
 
-        <section class="seccionGaleria">
-            <h2>BARILOCHE</h2>
-            <div class="imagenes">
-                <img src="../images/galeria/bariloche/bariloche.jpg" height="300px"  alt="Bariloche">
-                <img src="../images/galeria/bariloche/bariloche1.jpg" height="300px"  alt="Bariloche">
-                <img src="../images/galeria/bariloche/bariloche2.jpg" height="300px"  alt="Bariloche">
-                <img src="../images/galeria/bariloche/bariloche3.jpg" height="300px"  alt="Bariloche">
-            </div>  
-        </section>
 
-        <section class="seccionGaleria">
-            <h2>CATARATAS</h2>
-            <div class="imagenes">
-                <img src="../images/galeria/cataratas/cataratas.jpg" height="300px"  alt="Catarataas">
-                <img src="../images/galeria/cataratas/cataratas1.jpg" height="300px"  alt="Catarataas">
-                <img src="../images/galeria/cataratas/cataratas3.jpg" height="300px"  alt="Catarataas">
-                <img src="../images/galeria/cataratas/cataratas4.jpg" height="300px"  alt="Catarataas">
+        <section class="row shadow-lg rounded">
+            <div class="row">
+                <div class="col">
+                    <h2>BARILOCHE</h2>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="shadow" style="border: 2px solid gold;">
+                        <img src="../images/galeria/bariloche/bariloche.jpg" width="100%" alt="Bariloche">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="shadow" style="border: 2px solid gold;">
+                        <img src="../images/galeria/bariloche//bariloche1.jpg" width="100%" alt="Bariloche">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="shadow" style="border: 2px solid gold;">
+                        <img src="../images/galeria/bariloche/bariloche2.jpg" width="100%" alt="Bariloche">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="shadow" style="border: 2px solid gold;">
+                        <img src="../images/galeria/bariloche/bariloche3.jpg" width="100%" alt="Bariloche">
+                    </div>
+                </div>
             </div>
         </section>
+        <hr>
+
+
+        <section class="row shadow-lg rounded">
+            <div class="row">
+                <div class="col">
+                    <h2>CATARATAS</h2>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="shadow" style="border: 2px solid gold;">
+                        <img src="../images/galeria/cataratas/cataratas.jpg" width="100%" alt="Cataratas">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="shadow" style="border: 2px solid gold;">
+                        <img src="../images/galeria/Cataratas//Cataratas1.jpg" width="100%" alt="Cataratas">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="shadow" style="border: 2px solid gold;">
+                        <img src="../images/galeria/Cataratas/Cataratas4.jpg" width="100%" alt="Cataratas">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="shadow" style="border: 2px solid gold;">
+                        <img src="../images/galeria/Cataratas/Cataratas3.jpg" width="100%" alt="Cataratas">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
 
     </main>
 
