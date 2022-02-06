@@ -14,14 +14,14 @@ body{
     background-color: #92A9BD;
     margin-bottom: 25px;
 }
-.navegacion img{
-    margin-left: 15px;
-}
 .navegacion{
     padding: 5px;
     background-color: rgb(0,0,0, 0);
     display: flex;
     justify-content: space-around;
+}
+.navegacion img{
+    margin-left: 15px;
 }
 .navegacion ul{
     display: flex;
@@ -204,7 +204,7 @@ section h2{
     .encabezado h1{ /*INDEX*/
         font-size: 2.2em;
     }
-    .efectoHover span{
+    .efectoHover span{/*index*/
         visibility: visible;
     }
 

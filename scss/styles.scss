@@ -1,0 +1,79 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: $color-principal;
+    margin-bottom: 25px;
+}
+.navegacion{
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    img{
+        margin-left: 15px;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        li{
+            transition: 0.3s;
+            &:hover{
+                transform: scale(1.2);
+            }
+            a{
+                padding: 15px;
+                text-decoration: none;
+                color: $color-claro;
+                font-size: large;
+                font-family: 'Pacifico', cursive;
+            }
+        }
+    }
+}
+body{
+    background: rgb(145,196,131);
+    background: linear-gradient(0deg, rgb(196, 179, 131) 19%, rgb(202, 186, 150) 27%, rgba(154,208,236,1) 83%);
+}
+footer{
+    height: 100px;
+    background-color: #92A9BD;
+    text-align: center;
+}
+.flexCentro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.opinion{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+section h2{
+    text-align: center;
+}
+
+
+/** MEDIA QUERIES **/
+@media screen and (max-width: 768px) {
+    #imgEmpresa{ /*Nosotros*/
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    // Decidi dejarlo como css normal ya que es mas legible xq las otras variables no cambian nada
+    .navegacion ul li a{
+        padding: 0;
+    }
+}
