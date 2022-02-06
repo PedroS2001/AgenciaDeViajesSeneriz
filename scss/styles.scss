@@ -54,7 +54,7 @@ footer{
     text-align: center;
 }
 
-/**INDEX*/
+/** INDEX **/
 .banner{
     background-image: url("../images/road.jpg") ;
     background-position: center;
@@ -105,8 +105,7 @@ footer{
 }
 
 
-
-/**NOSOTROS**/
+/** NOSOTROS **/
 .opinion{
     display: flex;
     flex-flow: column wrap;
@@ -118,16 +117,73 @@ section h2{
 }
 
 
+/** CONTACTO **/
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+/** VIAJES **/
+.tarjeta{
+    background-color: #92A9BD;
+    border-radius: 15px;
+    margin: 10px;
+    img{
+        height: 70%;
+        border-radius: 15px;
+    }
+}
+.btnBuscar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+} 
+
+
+/** GALERIA **/
+.shadow{
+    iframe, img{
+        border-radius: 3%;
+        transition-duration: 0.5s;
+        filter: grayscale(1);
+        &:hover{
+            filter: none;
+            transform: rotate(-15deg);
+        }
+    }
+}
+
+
+
 /** MEDIA QUERIES **/
 @media screen and (max-width: 768px) {
     #imgEmpresa{ /*Nosotros*/
         display: none;
     }
+    .encabezado h1{ /*INDEX*/
+        font-size: 2.5em;
+    }
 }
 
 @media screen and (max-width: 575px) {
-    // Decidi dejarlo como css normal ya que es mas legible xq las otras variables no cambian nada
-    .navegacion ul li a{
-        padding: 0;
+    .navegacion{
+        background-color: $color-principal;
+        ul li a {
+            padding: 0;
+        }
     }
+    .encabezado h1{ /*INDEX*/
+        font-size: 2.2em;
+    }
+    .efectoHover span{/*index*/
+        visibility: visible;
+    }
+
 }

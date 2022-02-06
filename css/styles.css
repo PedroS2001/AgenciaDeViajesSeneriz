@@ -45,7 +45,7 @@ footer {
   align-items: center;
   text-align: center; }
 
-/**INDEX*/
+/** INDEX **/
 .banner {
   background-image: url("../images/road.jpg");
   background-position: center;
@@ -89,7 +89,7 @@ footer {
     visibility: visible;
     transform: scale(1.5); }
 
-/**NOSOTROS**/
+/** NOSOTROS **/
 .opinion {
   display: flex;
   flex-flow: column wrap;
@@ -99,12 +99,57 @@ footer {
 section h2 {
   text-align: center; }
 
+/** CONTACTO **/
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0; }
+
+/** VIAJES **/
+.tarjeta {
+  background-color: #92A9BD;
+  border-radius: 15px;
+  margin: 10px; }
+  .tarjeta img {
+    height: 70%;
+    border-radius: 15px; }
+
+.btnBuscar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; }
+
+/** GALERIA **/
+.shadow iframe, .shadow img {
+  border-radius: 3%;
+  transition-duration: 0.5s;
+  filter: grayscale(1); }
+  .shadow iframe:hover, .shadow img:hover {
+    filter: none;
+    transform: rotate(-15deg); }
+
 /** MEDIA QUERIES **/
 @media screen and (max-width: 768px) {
   #imgEmpresa {
     /*Nosotros*/
-    display: none; } }
+    display: none; }
+  .encabezado h1 {
+    /*INDEX*/
+    font-size: 2.5em; } }
 
 @media screen and (max-width: 575px) {
-  .navegacion ul li a {
-    padding: 0; } }
+  .navegacion {
+    background-color: #92A9BD; }
+    .navegacion ul li a {
+      padding: 0; }
+  .encabezado h1 {
+    /*INDEX*/
+    font-size: 2.2em; }
+  .efectoHover span {
+    /*index*/
+    visibility: visible; } }
