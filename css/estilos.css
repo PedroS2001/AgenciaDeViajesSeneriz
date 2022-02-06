@@ -63,8 +63,6 @@ footer{
         INDEX
  ****************** */
 .banner{
-    grid-area: header;
-
     background-image: url("../images/road.jpg") ;
     background-position: center;
     background-repeat: no-repeat;

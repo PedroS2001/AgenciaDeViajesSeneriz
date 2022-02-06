@@ -53,6 +53,60 @@ footer{
     align-items: center;
     text-align: center;
 }
+
+/**INDEX*/
+.banner{
+    background-image: url("../images/road.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    min-height: 50vh;
+}
+.encabezado{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 2em;
+    color: #FFEFEF;
+    h1{
+        text-transform: uppercase;
+        font-size: 3em;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+}
+.imagen{
+    transition: 0.5s;
+    width: 100%;
+    border: 1px dashed #FFEFEF;
+}
+.efectoHover{
+    position: relative;
+    span{
+        transition: 0.4s ;
+        position: absolute;
+        z-index: 1;             /*Para que este delante de la imagen al aparecer*/
+        visibility: hidden;
+        margin: 20%;
+        font-family: 'Saira Condensed', sans-serif;
+        font-size: 50px;
+        color: rgb(61, 61, 61);
+    }
+    &:hover{
+        .imagen{
+            opacity: 0.5;
+            transform: scale(1.1);
+        }
+        span{
+            visibility: visible;
+            transform: scale(1.5);
+        }
+    }
+}
+
+
+
+/**NOSOTROS**/
 .opinion{
     display: flex;
     flex-flow: column wrap;
