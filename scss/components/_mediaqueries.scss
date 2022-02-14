@@ -1,0 +1,25 @@
+/** MEDIA QUERIES **/
+@media screen and (max-width: 768px) {
+    #imgEmpresa{ /*Nosotros*/
+        display: none;
+    }
+    .encabezado h1{ /*INDEX*/
+        font-size: ($tamano-titulo)-20;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .navegacion{
+        background-color: $color-principal;
+        ul li a {
+            padding: 0;
+        }
+    }
+    .encabezado h1{ /*INDEX*/
+        font-size: ($tamano-titulo)-35;
+    }
+    .efectoHover span{/*index*/
+        visibility: visible;
+    }
+
+}

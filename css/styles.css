@@ -1,6 +1,26 @@
+.miBotonEnviar, .miBotonReset {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px; }
+
+.shadow iframe, .shadow img {
+  border-radius: 4%;
+  border: 2px solid gold; }
+
 * {
   margin: 0;
   padding: 0; }
+
+.miBotonEnviar {
+  background-color: #6f8a9b; }
+  .miBotonEnviar:hover {
+    background-color: #D1D1D1; }
+
+.miBotonReset {
+  border: 1px solid white;
+  background-color: #ECC488; }
+  .miBotonReset:hover {
+    background-color: #E7ED9B; }
 
 .header {
   background-color: #92A9BD;
@@ -32,6 +52,8 @@
 body {
   background: #91c483;
   background: linear-gradient(0deg, #c4b383 19%, #caba96 27%, #9ad0ec 83%); }
+  body h1 {
+    font-size: 40px; }
 
 footer {
   height: 100px;
@@ -61,7 +83,7 @@ footer {
   color: #FFEFEF; }
   .encabezado h1 {
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 100px;
     font-family: sans-serif;
     font-weight: bold; }
 
@@ -92,9 +114,11 @@ footer {
 /** NOSOTROS **/
 .opinion {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  align-content: center; }
 
 section h2 {
   text-align: center; }
@@ -103,9 +127,10 @@ section h2 {
 .ubicacion {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  align-content: center;
   margin: 0;
   padding: 0; }
 
@@ -120,13 +145,15 @@ section h2 {
 
 .btnBuscar {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  align-content: center;
   margin-bottom: 10px; }
 
 /** GALERIA **/
 .shadow iframe, .shadow img {
-  border-radius: 3%;
   transition-duration: 0.5s;
   filter: grayscale(1); }
   .shadow iframe:hover, .shadow img:hover {
@@ -140,7 +167,7 @@ section h2 {
     display: none; }
   .encabezado h1 {
     /*INDEX*/
-    font-size: 2.5em; } }
+    font-size: 80px; } }
 
 @media screen and (max-width: 575px) {
   .navegacion {
@@ -149,7 +176,7 @@ section h2 {
       padding: 0; }
   .encabezado h1 {
     /*INDEX*/
-    font-size: 2.2em; }
+    font-size: 65px; }
   .efectoHover span {
     /*index*/
     visibility: visible; } }
