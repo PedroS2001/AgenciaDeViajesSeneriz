@@ -24,6 +24,11 @@
     }
 }
 
+.tituloDebil{
+    @include flexCentro(row, wrap);
+    font-family: 'Bebas Neue', cursive;
+    color: $color-claro;
+}
 
 .header{
     background-color: $color-principal;

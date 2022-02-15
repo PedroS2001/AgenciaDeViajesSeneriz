@@ -22,6 +22,16 @@
   .miBotonReset:hover {
     background-color: #E7ED9B; }
 
+.tituloDebil {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Bebas Neue', cursive;
+  color: #FFEFEF; }
+
 .header {
   background-color: #92A9BD;
   margin-bottom: 25px; }
@@ -62,10 +72,11 @@ footer {
 
 .flexCentro {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  text-align: center; }
+  justify-content: center;
+  align-content: center; }
 
 /** INDEX **/
 .banner {
