@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Saira+Condensed:wght@700&display=swap');
 @import "./components/variables";
 @import "./base/mapas";
 @import "./base/extends";
@@ -6,6 +7,10 @@
 *{
     margin: 0;
     padding: 0;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
 }
 
 .miBotonEnviar{
@@ -77,7 +82,9 @@ footer{
 .flexCentro{
     @include flexCentro(row, wrap);
 }
-
+.flexCentroVertical{
+    @include flexCentro(column, wrap)
+}
 /** INDEX **/
 .banner{
     background-image: url("../images/banner.jpg") ;

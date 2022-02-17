@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Saira+Condensed:wght@700&display=swap");
 .miBotonEnviar, .miBotonReset {
   border: 1px solid black;
   border-radius: 10px;
@@ -11,10 +12,13 @@
   margin: 0;
   padding: 0; }
 
+p {
+  font-family: 'Roboto', sans-serif; }
+
 .miBotonEnviar {
-  background-color: #6f8a9b; }
+  background-color: #7C99AC; }
   .miBotonEnviar:hover {
-    background-color: #D1D1D1; }
+    background-color: #D3DEDC; }
 
 .miBotonReset {
   border: 1px solid white;
@@ -29,6 +33,7 @@
   align-items: center;
   justify-content: center;
   align-content: center;
+  text-align: center;
   font-family: 'Bebas Neue', cursive;
   color: #FFEFEF; }
 
@@ -76,7 +81,17 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  align-content: center; }
+  align-content: center;
+  text-align: center; }
+
+.flexCentroVertical {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center; }
 
 /** INDEX **/
 .banner {
@@ -149,7 +164,8 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  align-content: center; }
+  align-content: center;
+  text-align: center; }
 
 section h2 {
   text-align: center; }
@@ -162,6 +178,7 @@ section h2 {
   align-items: center;
   justify-content: center;
   align-content: center;
+  text-align: center;
   margin: 0;
   padding: 0; }
 
@@ -181,6 +198,7 @@ section h2 {
   align-items: center;
   justify-content: center;
   align-content: center;
+  text-align: center;
   margin-bottom: 10px; }
 
 /** GALERIA **/
@@ -210,4 +228,7 @@ section h2 {
     font-size: 65px; }
   .efectoHover span {
     /*index*/
-    visibility: visible; } }
+    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 10px 0 0 10px;
+    padding: 0; } }
