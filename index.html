@@ -29,6 +29,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&display=swap" rel="stylesheet">
 
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- link css -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -36,6 +39,9 @@
 <body>
 
     <header class="banner">
+        <div class="gradiente">
+            
+
         <nav class="navbar navbar-expand-sm navegacion">
             <div class="container-fluid">
                 <a href="index.html"> <img src="images/icono/logo.png" width="75px" alt="logo"> </a>
@@ -55,9 +61,11 @@
             </div>
         </nav>
 
-        <div class="encabezado">
-            <h1>IDA Y VUELTA</h1>
-            <h2>Agencia de viajes</h2>
+            <div data-aos="fade-right" data-aos-duration="2000" class="encabezado">
+                <h1>IDA Y VUELTA</h1>
+                <h2>Agencia de viajes</h2>
+                <img src="./images/flecha.png" class="flechita" width="50px" alt="">
+            </div>
         </div>
     </header>
 
@@ -103,6 +111,10 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
