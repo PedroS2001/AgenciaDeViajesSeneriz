@@ -43,8 +43,15 @@ p{
     padding: 5px;
     display: flex;
     justify-content: space-around;
-    img{
-        margin-left: 15px;
+    .navbar-toggler{
+        padding: 0;
+    }
+    .navbar-toggler-icon{
+        width: 40px;
+        height: 40px;
+        img{
+            width: 100%;
+        }
     }
     ul{
         display: flex;
@@ -189,7 +196,7 @@ section h2{
     border-radius: 15px;
     margin: 10px;
     img{
-        height: 70%;
+        max-height: 245px;
         border-radius: 15px;
     }
 }
@@ -207,8 +214,9 @@ section h2{
         filter: grayscale(1);
         &:hover{
             filter: none;
-            transform: rotate(-15deg);
+            transform: rotate(-10deg);
         }
+        max-height: 300px
     }
 }
 

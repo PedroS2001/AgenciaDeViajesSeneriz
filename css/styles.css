@@ -45,8 +45,13 @@ p {
   padding: 5px;
   display: flex;
   justify-content: space-around; }
-  .navegacion img {
-    margin-left: 15px; }
+  .navegacion .navbar-toggler {
+    padding: 0; }
+  .navegacion .navbar-toggler-icon {
+    width: 40px;
+    height: 40px; }
+    .navegacion .navbar-toggler-icon img {
+      width: 100%; }
   .navegacion ul {
     display: flex;
     list-style: none;
@@ -188,7 +193,7 @@ section h2 {
   border-radius: 15px;
   margin: 10px; }
   .tarjeta img {
-    height: 70%;
+    max-height: 245px;
     border-radius: 15px; }
 
 .btnBuscar {
@@ -204,10 +209,11 @@ section h2 {
 /** GALERIA **/
 .shadow iframe, .shadow img {
   transition-duration: 0.5s;
-  filter: grayscale(1); }
+  filter: grayscale(1);
+  max-height: 300px; }
   .shadow iframe:hover, .shadow img:hover {
     filter: none;
-    transform: rotate(-15deg); }
+    transform: rotate(-10deg); }
 
 /** MEDIA QUERIES **/
 @media screen and (max-width: 768px) {
