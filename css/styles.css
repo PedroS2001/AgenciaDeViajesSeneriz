@@ -187,7 +187,7 @@ section h2 {
 #sectionEmpleados {
   background-color: #7C99AC; }
   #sectionEmpleados img:hover {
-    transform: scale(1.1); }
+    transform: scale(1.05); }
 
 .miniBanner {
   background-image: url("../images/empresa.jpg");
@@ -198,6 +198,10 @@ section h2 {
   .miniBanner .encabezado h1 {
     font-size: 100px;
     background-color: rgba(0, 0, 0, 0.5); }
+
+.card {
+  background-color: #D3DEDC;
+  border-radius: 5%; }
 
 /** CONTACTO **/
 .ubicacion {
