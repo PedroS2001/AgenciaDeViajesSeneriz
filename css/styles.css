@@ -231,7 +231,9 @@ section h2 {
     display: none; }
   .encabezado h1 {
     /*INDEX*/
-    font-size: 80px; } }
+    font-size: 80px; }
+  .shadow iframe, .shadow img {
+    filter: none; } }
 
 @media screen and (max-width: 575px) {
   .navegacion {

@@ -6,6 +6,11 @@
     .encabezado h1{ /*INDEX*/
         font-size: ($tamano-titulo)-20;
     }
+    .shadow{
+        iframe, img{
+            filter: none;
+        }
+    }
 }
 
 @media screen and (max-width: 575px) {
