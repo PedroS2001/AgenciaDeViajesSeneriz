@@ -191,6 +191,32 @@ footer{
 section h2{
     text-align: center;
 }
+#sectionEmpleados{
+    background-color: $color-fuerte;
+    img{
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+
+.miniBanner{
+    background-image: url("../images/empresa.jpg") ;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    .encabezado{
+        h1{
+            font-size: $tamano-titulo;
+            background-color: rgba(0, 0, 0, 0.5 )
+        }
+    }
+}
+.card{
+    background-color: #D3DEDC; 
+    border-radius: 5%;
+}
 
 
 /** CONTACTO **/
@@ -199,7 +225,11 @@ section h2{
     margin: 0;
     padding: 0;
 }
-
+.imgContacto{
+    background-image: url("../images/Envelope-rafiki.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 /** VIAJES **/
 .tarjeta{
@@ -219,6 +249,8 @@ section h2{
 
 /** GALERIA **/
 .shadow{
+    display: flex;
+    justify-content: center;
     iframe, img{
         @extend %bordesRedondeados;
         transition-duration: 0.5s;

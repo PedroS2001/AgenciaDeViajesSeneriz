@@ -184,6 +184,25 @@ footer {
 section h2 {
   text-align: center; }
 
+#sectionEmpleados {
+  background-color: #7C99AC; }
+  #sectionEmpleados img:hover {
+    transform: scale(1.05); }
+
+.miniBanner {
+  background-image: url("../images/empresa.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh; }
+  .miniBanner .encabezado h1 {
+    font-size: 100px;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+.card {
+  background-color: #D3DEDC;
+  border-radius: 5%; }
+
 /** CONTACTO **/
 .ubicacion {
   display: flex;
@@ -195,6 +214,11 @@ section h2 {
   text-align: center;
   margin: 0;
   padding: 0; }
+
+.imgContacto {
+  background-image: url("../images/Envelope-rafiki.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
 
 /** VIAJES **/
 .tarjeta {
@@ -216,33 +240,41 @@ section h2 {
   margin-bottom: 10px; }
 
 /** GALERIA **/
-.shadow iframe, .shadow img {
-  transition-duration: 0.5s;
-  filter: grayscale(1);
-  max-height: 300px; }
-  .shadow iframe:hover, .shadow img:hover {
-    filter: none;
-    transform: rotate(-10deg); }
+.shadow {
+  display: flex;
+  justify-content: center; }
+  .shadow iframe, .shadow img {
+    transition-duration: 0.5s;
+    filter: grayscale(1);
+    max-height: 300px; }
+    .shadow iframe:hover, .shadow img:hover {
+      filter: none;
+      transform: rotate(-10deg); }
 
 /** MEDIA QUERIES **/
 @media screen and (max-width: 768px) {
   #imgEmpresa {
     /*Nosotros*/
     display: none; }
-  .encabezado h1 {
+  .banner .encabezado h1, .miniBanner .encabezado h1 {
     /*INDEX*/
-    font-size: 80px; } }
+    font-size: 80px; }
+  .shadow iframe, .shadow img {
+    filter: none; } }
 
 @media screen and (max-width: 575px) {
   .navegacion {
     background-color: #92A9BD; }
     .navegacion ul li a {
       padding: 0; }
-  .encabezado h1 {
+  .banner .encabezado h1, .miniBanner .encabezado h1 {
     /*INDEX*/
     font-size: 65px; }
+  .efectoHover:hover .imagen {
+    transform: none; }
+  .efectoHover:hover span {
+    transform: none; }
   .efectoHover span {
-    /*index*/
     visibility: visible;
     background-color: rgba(255, 255, 255, 0.5);
     margin: 10px 0 0 10px;
