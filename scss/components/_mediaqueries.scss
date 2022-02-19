@@ -3,7 +3,7 @@
     #imgEmpresa{ /*Nosotros*/
         display: none;
     }
-    .encabezado h1{ /*INDEX*/
+    .banner .encabezado h1, .miniBanner .encabezado h1{ /*INDEX*/
         font-size: ($tamano-titulo)-20;
     }
     .shadow{
@@ -20,14 +20,25 @@
             padding: 0;
         }
     }
-    .encabezado h1{ /*INDEX*/
+    .banner .encabezado h1, .miniBanner .encabezado h1{ /*INDEX*/
         font-size: ($tamano-titulo)-35;
     }
-    .efectoHover span{/*index*/
-        visibility: visible;
-        background-color: rgba(255, 255, 255, 0.5);
-        margin: 10px 0 0 10px;
-        padding: 0;
+    .efectoHover{ 
+        &:hover{
+            .imagen{
+                transform: none;
+            }
+            span{
+                transform: none;
+            }
+        }
+        span{
+            visibility: visible;
+            background-color: rgba(255, 255, 255, 0.5);
+            margin: 10px 0 0 10px;
+            padding: 0;
+        }
     }
+
 
 }

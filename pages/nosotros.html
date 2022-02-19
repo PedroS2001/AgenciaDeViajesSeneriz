@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header miniBanner">
         <nav class="navbar navbar-expand-sm navegacion">
             <div class="container-fluid">
                 <a href="../index.html"> <img src="../images/icono/logo.png" width="75px" alt="logo"> </a>
@@ -49,21 +49,18 @@
                 </div>
             </div>
         </nav>
+
+
+        <div class="encabezado">
+            <h1 class="tituloDebil tituloBanner" style="margin-top: 100px; padding: 15px;"> Acerca de nosotros </h1>
+        </div>
+
     </header>
 
 
-    <main class="container">
+    <main class="container-fluid">
 
-        <div class="row">
-            <div class="col">
-                <h1 class="tituloDebil"> Conocenos </h1>
-                <hr>
-            </div>
-        </div>
-
-
-
-        <section class="row ">
+        <section class="row p-3">
             <div class="row">
                 <div class="col">
                     <h2 class="mb-3"> Empresa </h2>
@@ -84,15 +81,15 @@
                         Trabajamos con las mejores compañias hoteleras y empresas de transporte!</p>
                 </div>
                 <div class="col-12 col-md-6">
-                    <img id="imgEmpresa" src="../images/empresa.jpg" class="rounded" width="100%" alt="">
+                    <img id="imgEmpresa" src="../images/presentacion.svg" class="rounded" width="100%" alt="Presentacion empresa">
                 </div>
             </div>
 
 
         </section>
-        <hr>
+        <!-- <hr> -->
 
-        <section class="row">
+        <section class="row p-5" id="sectionEmpleados">
             <div class="row">
                 <div class="col">
                     <h2 class="mb-3"> Empleados </h2>
@@ -118,10 +115,10 @@
             </div>
 
         </section>
-        <hr>
+        <!-- <hr> -->
 
 
-        <section class="row">
+        <section class="row p-3">
             <div class="row">
                 <div class="col">
                     <h2 class="mb-3">Tenemos convenios con</h2>
@@ -150,7 +147,7 @@
         <hr>
 
 
-        <section class="row">
+        <section class="row p-3">
             <div class="row">
                 <h2 class="mb-3">Opiniones de los clientes</h2>
             </div>
@@ -244,7 +241,9 @@
         AOS.init();
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
