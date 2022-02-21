@@ -68,7 +68,10 @@ p {
         text-decoration: none;
         color: #FFEFEF;
         font-size: large;
-        font-family: 'Pacifico', cursive; }
+        font-family: 'Pacifico', cursive;
+        transition: 0.3s; }
+        .navegacion ul li a:hover {
+          color: #D3DEDC; }
 
 body {
   background: #91c483;
@@ -112,7 +115,7 @@ footer {
 
 /** INDEX **/
 .banner {
-  background-image: url("../images/banner.jpg");
+  background-image: url("../images/banner.webp");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,8 +193,6 @@ section h2 {
 
 #sectionEmpleados {
   background-color: #7C99AC; }
-  #sectionEmpleados img:hover {
-    transform: scale(1.05); }
   #sectionEmpleados .card {
     background-color: #D3DEDC;
     border-radius: 5%; }
@@ -200,7 +201,7 @@ section h2 {
       font-size: 1.25em; }
 
 .miniBanner {
-  background-image: url("../images/empresa.jpg");
+  background-image: url("../images/empresa.webp");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
