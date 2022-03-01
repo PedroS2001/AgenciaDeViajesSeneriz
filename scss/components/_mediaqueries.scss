@@ -11,6 +11,9 @@
             filter: none;
         }
     }
+    #videoGaleria{
+        height: 184px;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -40,5 +43,21 @@
         }
     }
 
+    #videoGaleria{
+        height: 296px;
+    }
 
+
+}
+
+@media screen and (max-width: 1115px) {
+    #videoGaleria{
+        height: 221px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #videoGaleria{
+        height: 165px;
+    }
 }

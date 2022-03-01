@@ -196,7 +196,7 @@ section h2 {
   #sectionEmpleados .card {
     background-color: #D3DEDC;
     border-radius: 5%; }
-    #sectionEmpleados .card label {
+    #sectionEmpleados .card span {
       font-weight: 500;
       font-size: 1.25em; }
 
@@ -258,6 +258,9 @@ section h2 {
     .shadow iframe:hover, .shadow img:hover {
       filter: none;
       transform: rotate(-10deg); }
+  .shadow iframe {
+    width: 100%;
+    height: 270px; }
 
 /** MEDIA QUERIES **/
 @media screen and (max-width: 768px) {
@@ -268,7 +271,9 @@ section h2 {
     /*INDEX*/
     font-size: 80px; }
   .shadow iframe, .shadow img {
-    filter: none; } }
+    filter: none; }
+  #videoGaleria {
+    height: 184px; } }
 
 @media screen and (max-width: 575px) {
   .navegacion {
@@ -286,4 +291,14 @@ section h2 {
     visibility: visible;
     background-color: rgba(255, 255, 255, 0.5);
     margin: 10px 0 0 10px;
-    padding: 0; } }
+    padding: 0; }
+  #videoGaleria {
+    height: 296px; } }
+
+@media screen and (max-width: 1115px) {
+  #videoGaleria {
+    height: 221px; } }
+
+@media screen and (max-width: 991px) {
+  #videoGaleria {
+    height: 165px; } }
