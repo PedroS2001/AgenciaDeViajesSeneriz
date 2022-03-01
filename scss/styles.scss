@@ -95,8 +95,6 @@ footer{
     text-align: center;
     p{
         color: black;
-        font-size: large;
-        font-weight: bold;
         font-family: "Ubuntu";
     }
     img{
@@ -199,6 +197,11 @@ footer{
 }
 section h2{
     text-align: center;
+}
+#sectionEmpresa{
+    p{
+        font-size: 1.1em;
+    }
 }
 #sectionEmpleados{
     background-color: $color-fuerte;

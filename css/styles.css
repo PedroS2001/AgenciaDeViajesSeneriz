@@ -87,8 +87,6 @@ footer {
   text-align: center; }
   footer p {
     color: black;
-    font-size: large;
-    font-weight: bold;
     font-family: "Ubuntu"; }
   footer img {
     margin: 5px;
@@ -191,6 +189,9 @@ footer {
 section h2 {
   text-align: center; }
 
+#sectionEmpresa p {
+  font-size: 1.1em; }
+
 #sectionEmpleados {
   background-color: #7C99AC; }
   #sectionEmpleados .card {
@@ -292,6 +293,9 @@ section h2 {
     background-color: rgba(255, 255, 255, 0.5);
     margin: 10px 0 0 10px;
     padding: 0; }
+  footer img {
+    width: 30px;
+    height: 30px; }
   #videoGaleria {
     height: 296px; } }
 
