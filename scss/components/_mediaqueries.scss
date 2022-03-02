@@ -1,4 +1,6 @@
 /** MEDIA QUERIES **/
+
+
 @media screen and (max-width: 768px) {
     #imgEmpresa{ /*Nosotros*/
         display: none;
@@ -6,19 +8,23 @@
     .banner .encabezado h1, .miniBanner .encabezado h1{ /*INDEX*/
         font-size: ($tamano-titulo)-20;
     }
-    .contenedor{
+    .contenedorIndex{
         div{
             width: 100%;
         }
     }
-    .shadow{
+    .shadow{    /*GALERIA*/
         iframe, img{
             filter: none;
         }
+        iframe{
+            height: 250px;
+        }
     }
-    #videoGaleria{
-        height: 184px;
+    .pedro{
+        width: 50%;
     }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -53,21 +59,15 @@
             height: 30px;
         }
     }
-    #videoGaleria{
-        height: 296px;
+    .pedro{
+        width: 100%;
+    }
+    .videoDiv{
+        margin: 0;
+        width: 100%;
+        padding: 10px;
     }
 
 
 }
 
-@media screen and (max-width: 1115px) {
-    #videoGaleria{
-        height: 221px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    #videoGaleria{
-        height: 165px;
-    }
-}

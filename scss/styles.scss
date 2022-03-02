@@ -121,6 +121,16 @@ footer{
     margin: auto;
     display: flex; 
     flex-wrap: wrap;
+    // div{
+    //     width: 50%; 
+    //     padding: 2%;
+    // }
+}
+.contenedorIndex{
+    width: 90%;
+    margin: auto;
+    display: flex; 
+    flex-wrap: wrap;
     div{
         width: 50%; 
         padding: 2%;
@@ -277,6 +287,27 @@ section h2{
 
 
 /** GALERIA **/
+.contenedor{
+    section{
+        width: 100%;
+    }
+}
+.pedro{
+    width: 33%;
+    padding: 10px;
+}
+.videoDiv{
+    width: 70%;
+    margin: 10px auto;
+}
+.contenedorImagenesGaleria{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .shadow{
+        width: 100%;
+    }
+}
 .shadow{
     display: flex;
     justify-content: center;
@@ -288,12 +319,17 @@ section h2{
             filter: none;
             transform: rotate(-10deg);
         }
-        max-height: 300px
     }
     iframe{
         width: 100%;
-        height: 270px;
+        height: 450px;
     }
+}
+.contenedorSecciones{
+    width: 100%; 
+    border-radius: 15px; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-bottom: 20px;
 }
 
 
