@@ -6,6 +6,11 @@
     .banner .encabezado h1, .miniBanner .encabezado h1{ /*INDEX*/
         font-size: ($tamano-titulo)-20;
     }
+    .contenedor{
+        div{
+            width: 100%;
+        }
+    }
     .shadow{
         iframe, img{
             filter: none;

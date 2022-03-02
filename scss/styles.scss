@@ -103,6 +103,12 @@ footer{
         height: 40px;
     }
 }
+.contenedor-largo{
+    // width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
 .flexCentro{
     @include flexCentro(row, wrap);
 }
@@ -110,6 +116,16 @@ footer{
     @include flexCentro(column, wrap)
 }
 /** INDEX **/
+.contenedor{
+    width: 90%;
+    margin: auto;
+    display: flex; 
+    flex-wrap: wrap;
+    div{
+        width: 50%; 
+        padding: 2%;
+    }
+}
 .banner{
     background-image: url("../images/banner.webp") ;
     background-position: right;
