@@ -53,68 +53,62 @@
         </nav>
     </header>
 
-    <main class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 ubicacion" data-aos="fade-right">
+    <main class="contenedor">
+
+                                        <!-- TEXTO Y MAPA -->
+        <div class="dondeEstamos">
+            <div class="ubicacion" data-aos="fade-right">
                 <h1>DONDE ESTAMOS</h1>
                 <p>Estamos en CABA</p>
                 <p>9 de Julio y Corrientes</p>
                 <p>Telefono: +54 11 23456789</p>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1952.6896210284335!2d-58.383117069734034!3d-34.60367081818564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1642823851520!5m2!1ses-419!2sar"
                     width="100%" height="500px" style="border:0; border-radius: 2%;" allowfullscreen=""
                     title="Ubicacion" loading="lazy"></iframe>
             </div>
-
         </div>
 
-        <div class="row m-5">
+                                        <!-- FORMULARIO  -->
+        <div class="contactenos">
 
-            <div class="col-12 col-md-6">
+            <div>
                 <form>
-                    <fieldset class="row flexCentro">
+                    <fieldset class="flexCentro">
                         <legend> Contactenos </legend>
-
-                        <div class="col-12  mb-2">
+                        <div>
                             <input class="form-control" type="text" required placeholder="Nombre">
                         </div>
-
-                        <div class="col-12  mb-2">
+                        <div>
                             <input class="form-control" type="text" placeholder="Apellido">
                         </div>
-
-                        <div class="col-12  mb-2">
+                        <div>
                             <input class="form-control" type="email" required placeholder="Correo">
                         </div>
-
-                        <div class="col-12 mb-2">
+                        <div>
                             <input class="form-control" type="text" placeholder="Asunto">
                         </div>
-
-                        <div class="col-12 mb-2">
+                        <div>
                             <textarea class="form-control" rows="10" placeholder="Deje su mensaje"></textarea>
                         </div>
-
-                        <div class="row flexCentro">
+                        <div class="flexCentro">
                             <input type="submit" class="btn col-5 col-sm-4 m-1 miBotonEnviar" value=" Enviar"></input>
                             <input type="reset" class="btn col-5 col-sm-4 m-1 miBotonReset" value="Limpiar"></input>
                         </div>
-
                     </fieldset>
                 </form>
             </div>
-            <div class="col imgContacto">
 
+            <div>
+                <img id="imgMensaje" src="../images/Envelope-rafiki.svg" alt="">
             </div>
-
         </div>
 
-
     </main>
-
+                                        <!-- FOOTER -->
     <footer class="contenedor-largo">
         <div class="flexCentroVertical">
             <p>Todos los derechos reservados</p>

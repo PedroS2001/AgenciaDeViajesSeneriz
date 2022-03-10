@@ -250,6 +250,32 @@ footer {
     background-color: rgba(0, 0, 0, 0.5); }
 
 /** CONTACTO **/
+.dondeEstamos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 100%; }
+  .dondeEstamos div {
+    width: 50%; }
+
+.contactenos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center; }
+  .contactenos div {
+    width: 50%; }
+  .contactenos form div {
+    width: 100%;
+    margin-bottom: 10px; }
+
 .ubicacion {
   display: flex;
   flex-direction: column;
@@ -329,6 +355,10 @@ footer {
   #imgEmpresa {
     /*Nosotros*/
     display: none; }
+  #sectionEmpleados div .card {
+    width: 48%; }
+  #sectionEmpresa .flexCentro div {
+    width: 100%; }
   .banner .encabezado h1, .miniBanner .encabezado h1 {
     /*INDEX*/
     font-size: 80px; }
@@ -342,9 +372,7 @@ footer {
       height: 250px; }
   .pedro {
     width: 50%; }
-  #sectionEmpleados div .card {
-    width: 48%; }
-  #sectionEmpresa .flexCentro div {
+  .dondeEstamos div {
     width: 100%; } }
 
 @media screen and (max-width: 575px) {
@@ -375,4 +403,8 @@ footer {
     padding: 10px; }
   #sectionEmpleados div .card {
     max-width: 400px;
-    width: 95%; } }
+    width: 95%; }
+  .contactenos div {
+    width: 100%; }
+  .contactenos #imgMensaje {
+    display: none; } }

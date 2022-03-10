@@ -5,6 +5,20 @@
     #imgEmpresa{ /*Nosotros*/
         display: none;
     }
+    #sectionEmpleados{
+        div{
+            .card{
+                width: 48%;
+            }
+        }
+    }
+    #sectionEmpresa{
+        .flexCentro{
+            div{
+                width: 100%;
+            }
+        }
+    }
 
     .banner .encabezado h1, .miniBanner .encabezado h1{ /*INDEX*/
         font-size: ($tamano-titulo)-20;
@@ -25,20 +39,13 @@
     .pedro{
         width: 50%;
     }
-    #sectionEmpleados{
+    // CONTACTO
+    .dondeEstamos{
         div{
-            .card{
-                width: 48%;
-            }
+            width: 100%;
         }
     }
-    #sectionEmpresa{
-        .flexCentro{
-            div{
-                width: 100%;
-            }
-        }
-    }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -91,5 +98,13 @@
         }
     }
 
+    .contactenos{
+        div{
+            width: 100%;
+        }
+        #imgMensaje{
+            display: none;
+        }
+    }
 }
 

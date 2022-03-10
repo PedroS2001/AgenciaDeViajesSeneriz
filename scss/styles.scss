@@ -121,10 +121,6 @@ footer{
     margin: auto;
     display: flex; 
     flex-wrap: wrap;
-    // div{
-    //     width: 50%; 
-    //     padding: 2%;
-    // }
 }
 .contenedorIndex{
     width: 90%;
@@ -284,6 +280,25 @@ footer{
 
 
 /** CONTACTO **/
+.dondeEstamos{
+    @include flexCentro(row, wrap);
+    width: 100%;
+    div{
+        width: 50%
+    }
+}
+.contactenos{
+    @include flexCentro(row,wrap);
+    div{
+        width: 50%
+    }
+    form{
+        div{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
 .ubicacion{
     @include flexCentro(column, wrap);
     margin: 0;
