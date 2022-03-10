@@ -206,20 +206,38 @@ footer {
   align-content: center;
   text-align: center; }
 
-section h2 {
-  text-align: center; }
-
-#sectionEmpresa p {
-  font-size: 1.1em; }
+#sectionEmpresa {
+  padding: 3%; }
+  #sectionEmpresa p {
+    font-size: 1.1em; }
+  #sectionEmpresa .flexCentro div {
+    width: 50%; }
 
 #sectionEmpleados {
+  padding: 3%;
   background-color: #7C99AC; }
-  #sectionEmpleados .card {
-    background-color: #D3DEDC;
-    border-radius: 5%; }
-    #sectionEmpleados .card span {
-      font-weight: 500;
-      font-size: 1.25em; }
+  #sectionEmpleados div {
+    align-items: stretch; }
+    #sectionEmpleados div .card {
+      margin: 1%;
+      padding: 1%;
+      width: 30%;
+      background-color: #D3DEDC;
+      border-radius: 5%; }
+      #sectionEmpleados div .card span {
+        font-weight: 500;
+        font-size: 1.25em; }
+
+.subtituloNosotros {
+  margin-bottom: 3%;
+  text-align: center; }
+
+.contenedorNosotros section {
+  width: 100%;
+  padding: 3%; }
+
+.carousa div {
+  margin: 15px; }
 
 .miniBanner {
   background-image: url("../images/empresa.webp");
@@ -323,7 +341,11 @@ section h2 {
     .shadow iframe {
       height: 250px; }
   .pedro {
-    width: 50%; } }
+    width: 50%; }
+  #sectionEmpleados div .card {
+    width: 48%; }
+  #sectionEmpresa .flexCentro div {
+    width: 100%; } }
 
 @media screen and (max-width: 575px) {
   .navegacion {
@@ -350,4 +372,7 @@ section h2 {
   .videoDiv {
     margin: 0;
     width: 100%;
-    padding: 10px; } }
+    padding: 10px; }
+  #sectionEmpleados div .card {
+    max-width: 400px;
+    width: 95%; } }

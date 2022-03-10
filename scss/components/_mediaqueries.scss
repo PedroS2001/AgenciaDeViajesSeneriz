@@ -5,6 +5,7 @@
     #imgEmpresa{ /*Nosotros*/
         display: none;
     }
+
     .banner .encabezado h1, .miniBanner .encabezado h1{ /*INDEX*/
         font-size: ($tamano-titulo)-20;
     }
@@ -24,7 +25,20 @@
     .pedro{
         width: 50%;
     }
-
+    #sectionEmpleados{
+        div{
+            .card{
+                width: 48%;
+            }
+        }
+    }
+    #sectionEmpresa{
+        .flexCentro{
+            div{
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -68,6 +82,14 @@
         padding: 10px;
     }
 
+    #sectionEmpleados{
+        div{
+            .card{
+                max-width: 400px;
+                width: 95%;
+            }
+        }
+    }
 
 }
 

@@ -221,27 +221,53 @@ footer{
 .opinion{
     @include flexCentro(column, wrap);
 }
-section h2{
-    text-align: center;
-}
+
 #sectionEmpresa{
+    padding: 3%;
     p{
         font-size: 1.1em;
     }
+    .flexCentro{
+        div{
+            width: 50%;
+        }
+    }
 }
 #sectionEmpleados{
+    padding: 3%;
     background-color: $color-fuerte;
-    .card{
-        background-color: #D3DEDC; 
-        border-radius: 5%;
-        span{
-            font-weight: 500;
-            font-size: 1.25em;
+    div{
+        align-items: stretch;
+        .card{
+            margin: 1%;
+            padding: 1%;
+            width: 30%;
+            background-color: #D3DEDC; 
+            border-radius: 5%;
+            span{
+                font-weight: 500;
+                font-size: 1.25em;
+            }
         }
     }
 
 }
+.subtituloNosotros{
+    margin-bottom: 3%;
+    text-align: center;
+}
+.contenedorNosotros{
+    section{
+        width: 100%;
+        padding: 3%;
+    }
+}
 
+.carousa {
+    div{
+        margin: 15px;
+    }
+}
 .miniBanner{
     background-image: url("../images/empresa.webp") ;
     background-position: top right;
