@@ -103,8 +103,13 @@ footer{
         height: 40px;
     }
 }
+.contenedor{
+    width: 90%;
+    margin: auto;
+    display: flex; 
+    flex-wrap: wrap;
+}
 .contenedor-largo{
-    // width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -115,13 +120,10 @@ footer{
 .flexCentroVertical{
     @include flexCentro(column, wrap)
 }
+
+
 /** INDEX **/
-.contenedor{
-    width: 90%;
-    margin: auto;
-    display: flex; 
-    flex-wrap: wrap;
-}
+
 .contenedorIndex{
     width: 90%;
     margin: auto;
@@ -333,10 +335,6 @@ footer{
         width: 100%;
     }
 }
-.pedro{
-    width: 33%;
-    padding: 10px;
-}
 .videoDiv{
     width: 70%;
     margin: 10px auto;
@@ -348,6 +346,10 @@ footer{
     .shadow{
         width: 100%;
     }
+}
+.contImagen{
+    width: 33%;
+    padding: 10px;
 }
 .shadow{
     display: flex;
